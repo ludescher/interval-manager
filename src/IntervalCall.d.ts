@@ -5,3 +5,4 @@ declare class IntervalCall {
     Call<T>(): Promise<T>;
 }
 export default IntervalCall;
+//# sourceMappingURL=IntervalCall.d.ts.map

@@ -20,3 +20,4 @@ class IntervalCall {
     }
 }
 export default IntervalCall;
+//# sourceMappingURL=IntervalCall.js.map

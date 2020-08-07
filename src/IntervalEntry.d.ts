@@ -8,3 +8,4 @@ declare class IntervalEntry {
     CheckLastCall(): boolean;
 }
 export default IntervalEntry;
+//# sourceMappingURL=IntervalEntry.d.ts.map

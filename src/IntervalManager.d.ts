@@ -8,3 +8,4 @@ declare class IntervalManager {
     private static GetRegisteredEntry;
 }
 export default IntervalManager;
+//# sourceMappingURL=IntervalManager.d.ts.map

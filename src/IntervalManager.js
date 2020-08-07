@@ -44,3 +44,4 @@ class IntervalManager {
 }
 IntervalManager.entries = [];
 export default IntervalManager;
+//# sourceMappingURL=IntervalManager.js.map

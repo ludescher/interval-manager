@@ -14,10 +14,11 @@ class IntervalEntry {
             return true;
         }
         _timestamp += this.interval;
-        if (_timestamp > Date.now()) {
+        if (_timestamp < Date.now()) {
             return true;
         }
         return false;
     }
 }
 export default IntervalEntry;
+//# sourceMappingURL=IntervalEntry.js.map
