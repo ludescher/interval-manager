@@ -9,8 +9,8 @@ class IntervalCall {
         this.force = force;
     }
 
-    async Call<T>(): Promise<T> {
-        return IntervalManager.TryCall(this);
+    async Call<T, P>(parameters: P): Promise<T> {
+        return IntervalManager.TryCall(this, parameters);
     }
 }
 

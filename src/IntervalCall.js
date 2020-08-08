@@ -13,9 +13,9 @@ class IntervalCall {
         this.entryId = entryId;
         this.force = force;
     }
-    Call() {
+    Call(parameters) {
         return __awaiter(this, void 0, void 0, function* () {
-            return IntervalManager.TryCall(this);
+            return IntervalManager.TryCall(this, parameters);
         });
     }
 }

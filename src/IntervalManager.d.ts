@@ -4,7 +4,7 @@ declare class IntervalManager {
     static entries: Array<IntervalEntry>;
     static RegisterEntry(entry: IntervalEntry): void;
     static RemoveEntry(entry: IntervalEntry): void;
-    static TryCall<T>(interval: IntervalCall): Promise<T>;
+    static TryCall<T, P>(interval: IntervalCall, parameters: P): Promise<T>;
     private static GetRegisteredEntry;
 }
 export default IntervalManager;

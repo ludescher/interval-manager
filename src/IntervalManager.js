@@ -19,14 +19,14 @@ class IntervalManager {
             }
         }
     }
-    static TryCall(interval) {
+    static TryCall(interval, parameters) {
         return __awaiter(this, void 0, void 0, function* () {
             const _index = IntervalManager.GetRegisteredEntry(interval.entryId);
             if (_index > -1) {
                 const _entry = IntervalManager.entries[_index];
                 if (interval.force || _entry.CheckLastCall()) {
                     _entry.SetLastCall();
-                    return _entry.callback();
+                    return _entry.callback(parameters);
                 }
                 throw new Error('The entry is currently within the interval!');
             }
