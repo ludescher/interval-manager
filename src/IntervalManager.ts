@@ -24,10 +24,12 @@ class IntervalManager {
             if (interval.force || _entry.CheckLastCall()) {
                 _entry.SetLastCall();
                 return _entry.callback(parameters);
+            } else {
+                console.warn('The entry is currently within the interval!');
             }
-            throw new Error('The entry is currently within the interval!');
+        } else {
+            throw new Error('EntryId is not registered!');
         }
-        throw new Error('EntryId is not registered!');
     }
 
     private static GetRegisteredEntry(entryId: string): number {

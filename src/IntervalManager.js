@@ -28,9 +28,13 @@ class IntervalManager {
                     _entry.SetLastCall();
                     return _entry.callback(parameters);
                 }
-                throw new Error('The entry is currently within the interval!');
+                else {
+                    console.warn('The entry is currently within the interval!');
+                }
             }
-            throw new Error('EntryId is not registered!');
+            else {
+                throw new Error('EntryId is not registered!');
+            }
         });
     }
     static GetRegisteredEntry(entryId) {
